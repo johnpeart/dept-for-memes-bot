@@ -12,7 +12,7 @@ var quotes = [
 
 	// Kylie songs
 	["baby, when I heard you", "For the", "first time", "I knew we were meant to be as one"],
-	["Everybody's doing a brand-new dance, now", "Come on baby", "Do the Loco-motion", "I know you'll get to like it if you give it a chance now"],
+	["Everybody’s doing a brand-new dance, now", "Come on baby", "Do the Loco-motion", "I know you’ll get to like it if you give it a chance now"],
 	["So come on, come on", "Do the", "Loco-motion", "With me"],
 	
 	// The Hokey Cokey
@@ -26,15 +26,15 @@ var quotes = [
 	["Life, oh life", "Oh life,", "Oh life", "Do, doot doot dooo"],
 	
 	// Food songs
-	["I've got a cake to bake", "I've got", "no clue at all", "(cep, cep, cep, cep, cep kuuku)"],
+	["I’ve got a cake to bake", "I’ve got", "no clue at all", "(cep, cep, cep, cep, cep kuuku)"],
 	
 	// Cha Cha slide
-	["Right foot, let's stomp", "Left foot", "let's stomp", "Cha cha real smooth"],
+	["Right foot, let’s stomp", "Left foot", "let’s stomp", "Cha cha real smooth"],
 	["Slide to the left", "Slide", "to the right", "Criss cross"],
-	["To the left", "Take it", "Back now y'all", "Two hops this time"],
+	["To the left", "Take it", "Back now y’all", "Two hops this time"],
 	["How low can you go?", "Can you", "go down low?", "All the way to the floor?"],
-	["Reverse, reverse", "Cha cha", "now y'all", "Cha cha again"],
-	["Take it back now y'all", "Three hops", "this time", "Right foot now"],
+	["Reverse, reverse", "Cha cha", "now y’all", "Cha cha again"],
+	["Take it back now y’all", "Three hops", "this time", "Right foot now"],
 	["Cha cha now", "Cha cha", "again", "Turn it out"],
 
 	// Harlem Shuffle
@@ -42,8 +42,8 @@ var quotes = [
 	
 	// 5, 6, 7, 8
 	["Wanna make you mine", "Better", "get in line", "5, 6, 7, 8"],
-	["Foot kickin'", "Finger", "clickin'", "Leather slappin'"],
-	["Hip bumpin'", "Music", "thumpin'", "Knee hitchin'"],
+	["Foot kickin’", "Finger", "clickin’", "Leather slappin’"],
+	["Hip bumpin’", "Music", "thumpin’", "Knee hitchin’"],
 ];
   
 module.exports = quotes;
