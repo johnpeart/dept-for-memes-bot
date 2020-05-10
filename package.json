@@ -10,10 +10,10 @@
     "npm": "6.14.4"
   },
   "description": "A Twitter bot that tweets from the @DeptForMemes",
-  "main": "server.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node stay-alert/main.js",
-    "local": "node stay-alert/local.js"
+    "start": "node main.js",
+    "local": "node local.js"
   },
   "keywords": [
     "Twitter",
