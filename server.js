@@ -80,7 +80,6 @@ function createCanvasImage() {
     ctx.fillStyle = randomColors[1];
     ctx.fillRect(canvasPadding, canvasPadding, canvasWidth - (2 * canvasPadding), canvasHeight - (2 * canvasPadding));
 
-
 	// Add text
     ctx.textBaseline="alphabetic";
     ctx.textAlign="center";
@@ -134,28 +133,28 @@ function createCanvasImage() {
 
     // Draw first line
     ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
-    ctx.fillText(randomQuote[0].toUpperCase(), 600, drawHeight);
+    ctx.fillText(randomQuote[0].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote1;
 
     // Draw second line 
     ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
-    ctx.fillText(randomQuote[1].toUpperCase(), 600, drawHeight - 20);
+    ctx.fillText(randomQuote[1].toUpperCase(), (canvasWidth / 2), drawHeight - 20);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + fontSizeRandomQuote2;
 
     // Drawn third line
     ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
-    ctx.fillText(randomQuote[2].toUpperCase(), 600, drawHeight);
+    ctx.fillText(randomQuote[2].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3 + 20;
 
     // Draw fourth line
     ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
-    ctx.fillText(randomQuote[3].toUpperCase(), 600, drawHeight);
+    ctx.fillText(randomQuote[3].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Set start drawing position for text and shapes
     var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0 + (2 * downwardsTrianglePadding) + downwardsTriangles;
@@ -163,9 +162,9 @@ function createCanvasImage() {
     // Draw first downward triangle  (top)
     ctx.fillStyle = randomColors[0];
     ctx.beginPath();
-    ctx.moveTo(600, drawHeight);
-    ctx.lineTo(500, drawHeight - downwardsTriangles);
-    ctx.lineTo(700, drawHeight - downwardsTriangles);
+    ctx.moveTo((canvasWidth / 2), drawHeight);
+    ctx.lineTo((canvasWidth / 2) - 100, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) + 100, drawHeight - downwardsTriangles);
     ctx.fill();
 
     // Set start drawing position for text and shapes
@@ -174,9 +173,9 @@ function createCanvasImage() {
     // Draw second triangle  (bottom)
     ctx.fillStyle = randomColors[0];
     ctx.beginPath();
-    ctx.moveTo(600, drawHeight);
-    ctx.lineTo(500, drawHeight - downwardsTriangles);
-    ctx.lineTo(700, drawHeight - downwardsTriangles);
+    ctx.moveTo((canvasWidth / 2), drawHeight);
+    ctx.lineTo((canvasWidth / 2) - 100, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) + 100, drawHeight - downwardsTriangles);
     ctx.fill();
 
 }

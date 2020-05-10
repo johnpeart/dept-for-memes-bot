@@ -36,7 +36,6 @@ var canvasHeight = 1200;
 // Set the padding
 var canvasPadding = 65;
 
-
 // Generate a blank canvas canvas
 const 	deptcanvas = createCanvas(canvasWidth, canvasHeight)
 		deptcanvas instanceof Canvas
