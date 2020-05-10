@@ -30,11 +30,11 @@ var randomColors = colors[Math.floor(Math.random()*colors.length)];
 console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1] +" Text: " + randomColors[2]);
 
 // Set sizes of the canvas
-var canvasWidth = 2400;
-var canvasHeight = 1200;
+var canvasWidth = 1200;
+var canvasHeight = 675;
 
 // Set the padding
-var canvasPadding = 65;
+var canvasPadding = 35;
 
 // Generate a blank canvas canvas
 const 	deptcanvas = createCanvas(canvasWidth, canvasHeight)
@@ -59,16 +59,16 @@ function createCanvasImage() {
 
         ctx.fillStyle = randomColors[0];
         ctx.beginPath();
-        ctx.moveTo((canvasWidth / 2), -800 + ((i - 1)*200));
-        ctx.lineTo(-200, 500 + ((i - 1)*200));
-        ctx.lineTo((canvasWidth + 200), 500 + ((i - 1)*200));
+        ctx.moveTo((canvasWidth / 2), -300 + ((i - 1)*100));
+        ctx.lineTo(-200, 300 + ((i - 1)*100));
+        ctx.lineTo((canvasWidth + 200), 300 + ((i - 1)*100));
         ctx.fill();
 
         ctx.fillStyle = randomColors[1];
         ctx.beginPath();
-        ctx.moveTo((canvasWidth / 2), -700 + ((i - 1)*200));
-        ctx.lineTo(-200, 600 + ((i - 1)*200));
-        ctx.lineTo((canvasWidth + 200), 600 + ((i - 1)*200));
+        ctx.moveTo((canvasWidth / 2), -250 + ((i - 1)*100));
+        ctx.lineTo(-200, 350 + ((i - 1)*100));
+        ctx.lineTo((canvasWidth + 200), 350 + ((i - 1)*100));
         ctx.fill();
 
     }
@@ -88,7 +88,7 @@ function createCanvasImage() {
     var fontSizeRandomQuote3 = 30;
 
     ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[0]).width < 650) {
+    while (ctx.measureText(randomQuote[0]).width < 300) {
         ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
         fontSizeRandomQuote0++;
     }
@@ -96,7 +96,7 @@ function createCanvasImage() {
     console.log(fontSizeRandomQuote0);
 
     ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[1]).width < 650) {
+    while (ctx.measureText(randomQuote[1]).width < 300) {
         ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
         fontSizeRandomQuote1++;
     }
@@ -104,7 +104,7 @@ function createCanvasImage() {
     console.log(fontSizeRandomQuote1);
 
     ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[2]).width < 650) {
+    while (ctx.measureText(randomQuote[2]).width < 300) {
         ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
         fontSizeRandomQuote2++;
     }
@@ -112,15 +112,15 @@ function createCanvasImage() {
     console.log(fontSizeRandomQuote2);
 
     ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[3]).width < 650) {
+    while (ctx.measureText(randomQuote[3]).width < 300) {
         ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
         fontSizeRandomQuote3++;
     }
 
     console.log(fontSizeRandomQuote3);
 
-    var downwardsTrianglePadding = 30;
-    var downwardsTriangles = 45;
+    var downwardsTrianglePadding = 40;
+    var downwardsTriangles = 30;
 
     var textBlockHeight = fontSizeRandomQuote0 + fontSizeRandomQuote1 + fontSizeRandomQuote2 + fontSizeRandomQuote3 + (2 * downwardsTriangles) + (4 * downwardsTrianglePadding) + 20;
     console.log(textBlockHeight + "px");
@@ -147,14 +147,14 @@ function createCanvasImage() {
     ctx.fillText(randomQuote[2].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Update start drawing position for text and shapes
-    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3 + 20;
+    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3;
 
     // Draw fourth line
     ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
     ctx.fillText(randomQuote[3].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Set start drawing position for text and shapes
-    var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0 + (2 * downwardsTrianglePadding) + downwardsTriangles;
+    var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0 + downwardsTrianglePadding + downwardsTriangles;
 
     // Draw first downward triangle  (top)
     ctx.fillStyle = randomColors[0];
