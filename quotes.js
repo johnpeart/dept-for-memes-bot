@@ -20,7 +20,7 @@ var quotes = [
 	["You put your left arm in", "You put your", "left arm out", "In, out, in, out"],
 	
 	// Songs about life
-	["Whether you’re a brother", "Or whether", " you’re a mother", "You’re stayin’ alive, stayin’ alive"],
+	["Whether you’re a brother", "Or whether", " you’re a mother", "You’re stayin’ alive"],
 	["Life goin’ nowhere", "Somebody", "help me, yeah", "Stayin’ alive"],
 	["Life, oh life", "Oh life,", "Oh life", "Do, doot doot dooo"],
 	
