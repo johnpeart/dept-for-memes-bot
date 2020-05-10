@@ -32,22 +32,19 @@ var randomColors = colors[Math.floor(Math.random()*colors.length)];
 console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1] +" Text: " + randomColors[2]);
 
 // Set sizes of the canvas
-var canvasWidth = 1200;
+var canvasWidth = 2400;
 var canvasHeight = 1200;
 
 // Set the padding
 var canvasPadding = 65;
 
-// Set the size of the full canvas, minus padding on each side
-var canvasWidthPadding = (canvasWidth - (canvasPadding * 2));
-var canvasHeightPadding = (canvasHeight - (canvasPadding * 2));
 
 // Generate a blank canvas canvas
 const 	deptcanvas = createCanvas(canvasWidth, canvasHeight)
 		deptcanvas instanceof Canvas
 
 // A function to generate the Twitter image via the HTML Canvas API
-function createTwitterImage() {
+function createCanvasImage() {
 
 	// Set the width and height of the canvas
 	deptcanvas.width = (canvasWidth);
@@ -57,31 +54,32 @@ function createTwitterImage() {
 	var ctx = deptcanvas.getContext('2d');
 
 	// Background colour
-	ctx.fillStyle = randomColors[1];
-	ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+    ctx.fillStyle = randomColors[1];
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+    
+    // Foreground pattern
+    for (var i = 0; i < 12; i++) {
 
-	// Foreground pattern
-	for (var i = 0; i < 8; i++) {
+        ctx.fillStyle = randomColors[0];
+        ctx.beginPath();
+        ctx.moveTo((canvasWidth / 2), -800 + ((i - 1)*200));
+        ctx.lineTo(-200, 500 + ((i - 1)*200));
+        ctx.lineTo((canvasWidth + 200), 500 + ((i - 1)*200));
+        ctx.fill();
 
-		ctx.fillStyle = randomColors[0];
-		ctx.beginPath();
-		ctx.moveTo(600, -200 + ((i - 1)*200));
-		ctx.lineTo(-200, 500 + ((i - 1)*200));
-		ctx.lineTo(1400, 500 + ((i - 1)*200));
-		ctx.fill();
+        ctx.fillStyle = randomColors[1];
+        ctx.beginPath();
+        ctx.moveTo((canvasWidth / 2), -700 + ((i - 1)*200));
+        ctx.lineTo(-200, 600 + ((i - 1)*200));
+        ctx.lineTo((canvasWidth + 200), 600 + ((i - 1)*200));
+        ctx.fill();
 
-		ctx.fillStyle = randomColors[1];
-		ctx.beginPath();
-		ctx.moveTo(600, -100 + ((i - 1)*200));
-		ctx.lineTo(-200, 600 + ((i - 1)*200));
-		ctx.lineTo(1400, 600 + ((i - 1)*200));
-		ctx.fill();
-
-	}
-
+    }
+    
 	// Inner padded square
     ctx.fillStyle = randomColors[1];
-    ctx.fillRect(canvasPadding, canvasPadding, canvasWidthPadding, canvasHeightPadding);
+    ctx.fillRect(canvasPadding, canvasPadding, canvasWidth - (2 * canvasPadding), canvasHeight - (2 * canvasPadding));
+
 
 	// Add text
     ctx.textBaseline="alphabetic";
