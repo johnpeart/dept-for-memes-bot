@@ -34,15 +34,15 @@ var colors = [
 	["#000000", "#009fe3", "#000000"],
 
 
-	["#FFFFFF", "#FFD700", "#000000"],
-	["#FFFFFF", "#007aff", "#000000"],
-	["#FFFFFF", "#3b5998", "#000000"],
-	["#FFFFFF", "#c643fc", "#000000"],
-	["#FFFFFF", "#e6007e", "#000000"],
-	["#FFFFFF", "#c90000", "#000000"],
-	["#FFFFFF", "#ff5e3a", "#000000"],
-	["#FFFFFF", "#0bd318", "#000000"],
-	["#FFFFFF", "#009fe3", "#000000"]
+	["#FFFFFF", "#FFD700", "#FFFFFF"],
+	["#FFFFFF", "#007aff", "#FFFFFF"],
+	["#FFFFFF", "#3b5998", "#FFFFFF"],
+	["#FFFFFF", "#c643fc", "#FFFFFF"],
+	["#FFFFFF", "#e6007e", "#FFFFFF"],
+	["#FFFFFF", "#c90000", "#FFFFFF"],
+	["#FFFFFF", "#ff5e3a", "#FFFFFF"],
+	["#FFFFFF", "#0bd318", "#FFFFFF"],
+	["#FFFFFF", "#009fe3", "#FFFFFF"]
 ];
   
 module.exports = colors;
