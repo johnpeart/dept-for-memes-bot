@@ -38,6 +38,23 @@ var canvasHeight = 675;
 // Set the padding
 var canvasPadding = 35;
 
+var cropping = "square"; // "wide" or "square"
+
+if (cropping == "square") {
+    // Set the padding
+    var canvasPadding = 35;
+    var canvasTopPadding = canvasPadding;
+    var canvasBottomPadding = canvasHeight - (2 * canvasPadding);
+    var canvasLeftPadding = (canvasWidth * 0.25);
+    var canvasRightPadding = (canvasWidth * 0.5);
+} else {
+    // Set the padding
+    var canvasPadding = 35;
+    var canvasTopPadding = canvasPadding;
+    var canvasBottomPadding = canvasHeight - (2 * canvasPadding);
+    var canvasLeftPadding = canvasPadding;
+    var canvasRightPadding = canvasWidth - (2 * canvasPadding);
+}
 
 // Generate a blank canvas canvas
 const 	deptcanvas = createCanvas(canvasWidth, canvasHeight)
@@ -78,7 +95,7 @@ function createCanvasImage() {
     
 	// Inner padded square
     ctx.fillStyle = randomColors[1];
-    ctx.fillRect(canvasPadding, canvasPadding, canvasWidth - (2 * canvasPadding), canvasHeight - (2 * canvasPadding));
+    ctx.fillRect(canvasLeftPadding, canvasTopPadding, canvasRightPadding, canvasBottomPadding);
 
 	// Add text
     ctx.textBaseline="alphabetic";
@@ -96,15 +113,11 @@ function createCanvasImage() {
         fontSizeRandomQuote0++;
     }
 
-    console.log(fontSizeRandomQuote0);
-
     ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
     while (ctx.measureText(randomQuote[1]).width < 300) {
         ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
         fontSizeRandomQuote1++;
     }
-
-    console.log(fontSizeRandomQuote1);
 
     ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
     while (ctx.measureText(randomQuote[2]).width < 300) {
@@ -112,21 +125,16 @@ function createCanvasImage() {
         fontSizeRandomQuote2++;
     }
 
-    console.log(fontSizeRandomQuote2);
-
     ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
     while (ctx.measureText(randomQuote[3]).width < 300) {
         ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
         fontSizeRandomQuote3++;
     }
 
-    console.log(fontSizeRandomQuote3);
-
     var downwardsTrianglePadding = 40;
     var downwardsTriangles = 30;
 
     var textBlockHeight = fontSizeRandomQuote0 + fontSizeRandomQuote1 + fontSizeRandomQuote2 + fontSizeRandomQuote3 + (2 * downwardsTriangles) + (4 * downwardsTrianglePadding) + 20;
-    console.log(textBlockHeight + "px");
 
     // Set start drawing position for text and shapes
     var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0;

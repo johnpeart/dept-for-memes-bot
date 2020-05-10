@@ -12,8 +12,8 @@
   "description": "A Twitter bot that tweets from the @DeptForMemes",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "local": "node canvas.js"
+    "start": "node stay-alert/main.js",
+    "local": "node stay-alert/local.js"
   },
   "keywords": [
     "Twitter",

@@ -33,8 +33,23 @@ console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1]
 var canvasWidth = 1200;
 var canvasHeight = 675;
 
-// Set the padding
-var canvasPadding = 35;
+var cropping = "square"; // "wide" or "square"
+
+if (cropping == "square") {
+    // Set the padding
+    var canvasPadding = 35;
+    var canvasTopPadding = canvasPadding;
+    var canvasBottomPadding = canvasHeight - (2 * canvasPadding);
+    var canvasLeftPadding = (canvasWidth * 0.25);
+    var canvasRightPadding = (canvasWidth * 0.5);
+} else {
+    // Set the padding
+    var canvasPadding = 35;
+    var canvasTopPadding = canvasPadding;
+    var canvasBottomPadding = canvasHeight - (2 * canvasPadding);
+    var canvasLeftPadding = canvasPadding;
+    var canvasRightPadding = canvasWidth - (2 * canvasPadding);
+}
 
 // Generate a blank canvas canvas
 const 	deptcanvas = createCanvas(canvasWidth, canvasHeight)
@@ -75,7 +90,7 @@ function createCanvasImage() {
     
 	// Inner padded square
     ctx.fillStyle = randomColors[1];
-    ctx.fillRect(canvasPadding, canvasPadding, canvasWidth - (2 * canvasPadding), canvasHeight - (2 * canvasPadding));
+    ctx.fillRect(canvasLeftPadding, canvasTopPadding, canvasRightPadding, canvasBottomPadding);
 
 	// Add text
     ctx.textBaseline="alphabetic";
@@ -174,7 +189,7 @@ function createCanvasImage() {
     ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
     ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
-    
+
     ctx.scale(2,2);
 
     const buffer = deptcanvas.toBuffer('image/png')
