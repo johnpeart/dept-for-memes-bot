@@ -55,18 +55,18 @@ function createCanvasImage() {
     ctx.fillRect(0, 0, canvasWidth, canvasHeight);
     
     // Foreground pattern
-    for (var i = 0; i < 12; i++) {
+    for (var i = 0; i < 14; i++) {
 
         ctx.fillStyle = randomColors[0];
         ctx.beginPath();
-        ctx.moveTo((canvasWidth / 2), -300 + ((i - 1)*100));
+        ctx.moveTo((canvasWidth / 2), -500 + ((i - 1)*100));
         ctx.lineTo(-200, 300 + ((i - 1)*100));
         ctx.lineTo((canvasWidth + 200), 300 + ((i - 1)*100));
         ctx.fill();
 
         ctx.fillStyle = randomColors[1];
         ctx.beginPath();
-        ctx.moveTo((canvasWidth / 2), -250 + ((i - 1)*100));
+        ctx.moveTo((canvasWidth / 2), -450 + ((i - 1)*100));
         ctx.lineTo(-200, 350 + ((i - 1)*100));
         ctx.lineTo((canvasWidth + 200), 350 + ((i - 1)*100));
         ctx.fill();
@@ -160,8 +160,8 @@ function createCanvasImage() {
     ctx.fillStyle = randomColors[0];
     ctx.beginPath();
     ctx.moveTo((canvasWidth / 2), drawHeight);
-    ctx.lineTo((canvasWidth / 2) - 100, drawHeight - downwardsTriangles);
-    ctx.lineTo((canvasWidth / 2) + 100, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
 
     // Set start drawing position for text and shapes
@@ -171,8 +171,8 @@ function createCanvasImage() {
     ctx.fillStyle = randomColors[0];
     ctx.beginPath();
     ctx.moveTo((canvasWidth / 2), drawHeight);
-    ctx.lineTo((canvasWidth / 2) - 100, drawHeight - downwardsTriangles);
-    ctx.lineTo((canvasWidth / 2) + 100, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
+    ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
 
     const buffer = deptcanvas.toBuffer('image/png')
