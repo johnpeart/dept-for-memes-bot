@@ -40,6 +40,9 @@ var quotes = [
 	["Wanna make you mine", "Better", "get in line", "5, 6, 7, 8"],
 	["Foot kickin’", "Finger", "clickin’", "Leather slappin’"],
 	["Hip bumpin’", "Music", "thumpin’", "Knee hitchin’"],
+
+	// RANDOM INSPIRATION
+	["Live every moment", "Love", "Beyond words", "Laugh everyday"],
 ];
   
 module.exports = quotes;
