@@ -38,7 +38,7 @@ var canvasHeight = 675;
 // Set the padding
 var canvasPadding = 35;
 
-var cropping = "square"; // "wide" or "square"
+var cropping = "wide"; // "wide" or "square"
 
 if (cropping == "square") {
     // Set the padding
