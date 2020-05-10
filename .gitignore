@@ -6,3 +6,5 @@ pkgconfig*
 npm-debug.log
 config-local.js
 /output
+manual-canvas.js
+manual-quotes.js
