@@ -12,7 +12,6 @@ var quotes = [
 
 	// Kylie songs
 	["baby, when I heard you", "For the", "first time", "I knew we were meant to be as one"],
-	["Everybody’s doing a brand-new dance, now", "Come on baby", "Do the Loco-motion", "I know you’ll get to like it if you give it a chance now"],
 	["So come on, come on", "Do the", "Loco-motion", "With me"],
 	
 	// The Hokey Cokey
@@ -24,9 +23,6 @@ var quotes = [
 	["Whether you’re a brother", "Or whether", " you’re a mother", "You’re stayin’ alive, stayin’ alive"],
 	["Life goin’ nowhere", "Somebody", "help me, yeah", "Stayin’ alive"],
 	["Life, oh life", "Oh life,", "Oh life", "Do, doot doot dooo"],
-	
-	// Food songs
-	["I’ve got a cake to bake", "I’ve got", "no clue at all", "(cep, cep, cep, cep, cep kuuku)"],
 	
 	// Cha Cha slide
 	["Right foot, let’s stomp", "Left foot", "let’s stomp", "Cha cha real smooth"],
