@@ -36,7 +36,7 @@ var canvasWidth = 1200;
 var canvasHeight = 675;
 
 // Set the padding
-var canvasPadding = 65;
+var canvasPadding = 35;
 
 
 // Generate a blank canvas canvas
@@ -177,7 +177,7 @@ function createCanvasImage() {
     ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
     ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
-        
+
 }
 
 // TWITTER AUTH
