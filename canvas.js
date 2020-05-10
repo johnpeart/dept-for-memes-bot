@@ -151,7 +151,7 @@ function createCanvasImage() {
     ctx.fillText(randomQuote[2].toUpperCase(), 600, drawHeight);
 
     // Update start drawing position for text and shapes
-    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3;
+    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3 + 20;
 
     // Draw fourth line
     ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
