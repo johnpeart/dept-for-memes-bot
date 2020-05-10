@@ -81,62 +81,103 @@ function createCanvasImage() {
     ctx.fillStyle = randomColors[1];
     ctx.fillRect(canvasPadding, canvasPadding, canvasWidthPadding, canvasHeightPadding);
 
-    // Downward triangles  (top)
-    ctx.fillStyle = randomColors[0];
-    ctx.beginPath();
-    ctx.moveTo(600, 360);
-    ctx.lineTo(500, 315);
-    ctx.lineTo(700, 315);
-    ctx.fill();
-
-    // Downward triangles  (bottom)
-    ctx.fillStyle = randomColors[0];
-    ctx.beginPath();
-    ctx.moveTo(600, 885);
-    ctx.lineTo(500, 840);
-    ctx.lineTo(700, 840);
-    ctx.fill();
-
 	// Add text
-    ctx.textBaseline="middle";
+    ctx.textBaseline="alphabetic";
     ctx.textAlign="center";
 	ctx.fillStyle = randomColors[2]
 
-    var fontSize = 10
+    var fontSizeRandomQuote0 = 30;
+    var fontSizeRandomQuote1 = 30;
+    var fontSizeRandomQuote2 = 30;
+    var fontSizeRandomQuote3 = 30;
 
-    ctx.font = fontSize + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[0]).width < 700) {
-        fontSize++;
-        ctx.font = fontSize + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+    while (ctx.measureText(randomQuote[0]).width < 650) {
+        ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+        fontSizeRandomQuote0++;
     }
-    ctx.fillText(randomQuote[0].toUpperCase(), 600, 200);
 
-    var fontSize = 10
+    console.log(fontSizeRandomQuote0);
 
-    ctx.font = fontSize + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[1]).width < 700) {
-        fontSize++;
-        ctx.font = fontSize + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+    while (ctx.measureText(randomQuote[1]).width < 650) {
+        ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+        fontSizeRandomQuote1++;
     }
-    ctx.fillText(randomQuote[1].toUpperCase(), 600, 520);
 
-    var fontSize = 10
+    console.log(fontSizeRandomQuote1);
 
-    ctx.font = fontSize + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[2]).width < 700) {
-        fontSize++;
-        ctx.font = fontSize + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+    while (ctx.measureText(randomQuote[2]).width < 650) {
+        ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+        fontSizeRandomQuote2++;
     }
-    ctx.fillText(randomQuote[2].toUpperCase(), 600, 720);
 
-    var fontSize = 10
+    console.log(fontSizeRandomQuote2);
 
-    ctx.font = fontSize + "px 'Gudea'";
-    while (ctx.measureText(randomQuote[3]).width < 700) {
-        fontSize++;
-        ctx.font = fontSize + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+    while (ctx.measureText(randomQuote[3]).width < 650) {
+        ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+        fontSizeRandomQuote3++;
     }
-    ctx.fillText(randomQuote[3].toUpperCase(), 600, 1000);
+
+    console.log(fontSizeRandomQuote3);
+
+    var downwardsTrianglePadding = 30;
+    var downwardsTriangles = 45;
+
+    var textBlockHeight = fontSizeRandomQuote0 + fontSizeRandomQuote1 + fontSizeRandomQuote2 + fontSizeRandomQuote3 + (2 * downwardsTriangles) + (4 * downwardsTrianglePadding) + 20;
+    console.log(textBlockHeight + "px");
+
+    // Set start drawing position for text and shapes
+    var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0;
+
+    // Draw first line
+    ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+    ctx.fillText(randomQuote[0].toUpperCase(), 600, drawHeight);
+
+    // Update start drawing position for text and shapes
+    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote1;
+
+    // Draw second line 
+    ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+    ctx.fillText(randomQuote[1].toUpperCase(), 600, drawHeight - 20);
+
+    // Update start drawing position for text and shapes
+    var drawHeight = drawHeight + fontSizeRandomQuote2;
+
+    // Drawn third line
+    ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+    ctx.fillText(randomQuote[2].toUpperCase(), 600, drawHeight);
+
+    // Update start drawing position for text and shapes
+    var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3;
+
+    // Draw fourth line
+    ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+    ctx.fillText(randomQuote[3].toUpperCase(), 600, drawHeight);
+
+    // Set start drawing position for text and shapes
+    var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0 + (2 * downwardsTrianglePadding) + downwardsTriangles;
+
+    // Draw first downward triangle  (top)
+    ctx.fillStyle = randomColors[0];
+    ctx.beginPath();
+    ctx.moveTo(600, drawHeight);
+    ctx.lineTo(500, drawHeight - downwardsTriangles);
+    ctx.lineTo(700, drawHeight - downwardsTriangles);
+    ctx.fill();
+
+    // Set start drawing position for text and shapes
+    var drawHeight = drawHeight + downwardsTriangles + (2 * downwardsTrianglePadding) + fontSizeRandomQuote1 + fontSizeRandomQuote2;
+
+    // Draw second triangle  (bottom)
+    ctx.fillStyle = randomColors[0];
+    ctx.beginPath();
+    ctx.moveTo(600, drawHeight);
+    ctx.lineTo(500, drawHeight - downwardsTriangles);
+    ctx.lineTo(700, drawHeight - downwardsTriangles);
+    ctx.fill();
 
     const buffer = deptcanvas.toBuffer('image/png')
     fs.writeFileSync('./output/stay-alert.png', buffer)
