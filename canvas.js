@@ -174,6 +174,8 @@ function createCanvasImage() {
     ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
     ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
+    
+    ctx.scale(2,2);
 
     const buffer = deptcanvas.toBuffer('image/png')
     fs.writeFileSync('./output/stay-alert.png', buffer)

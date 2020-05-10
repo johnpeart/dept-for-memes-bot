@@ -51,7 +51,7 @@ function createCanvasImage() {
 	deptcanvas.height = (canvasHeight);
 
 	// This tells the API that the canvas is 2 dimensional
-	var ctx = deptcanvas.getContext('2d');
+    var ctx = deptcanvas.getContext('2d');
 
 	// Background colour
     ctx.fillStyle = randomColors[1];
@@ -177,6 +177,8 @@ function createCanvasImage() {
     ctx.lineTo((canvasWidth / 2) - 50, drawHeight - downwardsTriangles);
     ctx.lineTo((canvasWidth / 2) + 50, drawHeight - downwardsTriangles);
     ctx.fill();
+
+    ctx.scale(2,2);
 
 }
 
