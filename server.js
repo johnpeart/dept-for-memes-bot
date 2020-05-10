@@ -187,7 +187,7 @@ var T = new Twit(config);
 function sendTweet() {
 
 	// call the function to draw the canvas
-	createTwitterImage();
+	createCanvasImage();
 
 
 	// Post the tweet
