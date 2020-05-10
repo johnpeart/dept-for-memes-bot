@@ -32,8 +32,8 @@ var randomColors = colors[Math.floor(Math.random()*colors.length)];
 console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1] +" Text: " + randomColors[2]);
 
 // Set sizes of the canvas
-var canvasWidth = 2400;
-var canvasHeight = 1200;
+var canvasWidth = 1200;
+var canvasHeight = 675;
 
 // Set the padding
 var canvasPadding = 65;
