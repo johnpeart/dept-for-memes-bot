@@ -19,7 +19,7 @@ function fontFile(name) {
 }
 
 // Register the fonts
-registerFont(fontFile('Gudea-Bold.ttf'), { family: 'Gudea' })
+registerFont(fontFile('stay-alert.ttf'), { family: 'Frutiger 57Cn' })
 
 // CANVAS VARIABLES
 // Pick a quote and colours at random
@@ -33,7 +33,7 @@ console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1]
 var canvasWidth = 1200;
 var canvasHeight = 675;
 
-var cropping = "square"; // "wide" or "square"
+var cropping = "wide"; // "wide" or "square"
 
 if (cropping == "square") {
     // Set the padding
@@ -102,33 +102,33 @@ function createCanvasImage() {
     var fontSizeRandomQuote2 = 30;
     var fontSizeRandomQuote3 = 30;
 
-    ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote0 + "px 'Frutiger 57Cn'";
     while (ctx.measureText(randomQuote[0]).width < 300) {
-        ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+        ctx.font = fontSizeRandomQuote0 + "px 'Frutiger 57Cn'";
         fontSizeRandomQuote0++;
     }
 
     console.log(fontSizeRandomQuote0);
 
-    ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote1 + "px 'Frutiger 57Cn'";
     while (ctx.measureText(randomQuote[1]).width < 300) {
-        ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+        ctx.font = fontSizeRandomQuote1 + "px 'Frutiger 57Cn'";
         fontSizeRandomQuote1++;
     }
 
     console.log(fontSizeRandomQuote1);
 
-    ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote2 + "px 'Frutiger 57Cn'";
     while (ctx.measureText(randomQuote[2]).width < 300) {
-        ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+        ctx.font = fontSizeRandomQuote2 + "px 'Frutiger 57Cn'";
         fontSizeRandomQuote2++;
     }
 
     console.log(fontSizeRandomQuote2);
 
-    ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote3 + "px 'Frutiger 57Cn'";
     while (ctx.measureText(randomQuote[3]).width < 300) {
-        ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+        ctx.font = fontSizeRandomQuote3 + "px 'Frutiger 57Cn'";
         fontSizeRandomQuote3++;
     }
 
@@ -144,28 +144,28 @@ function createCanvasImage() {
     var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + fontSizeRandomQuote0;
 
     // Draw first line
-    ctx.font = fontSizeRandomQuote0 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote0 + "px 'Frutiger 57Cn'";
     ctx.fillText(randomQuote[0].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote1;
 
     // Draw second line 
-    ctx.font = fontSizeRandomQuote1 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote1 + "px 'Frutiger 57Cn'";
     ctx.fillText(randomQuote[1].toUpperCase(), (canvasWidth / 2), drawHeight - 20);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + fontSizeRandomQuote2;
 
     // Drawn third line
-    ctx.font = fontSizeRandomQuote2 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote2 + "px 'Frutiger 57Cn'";
     ctx.fillText(randomQuote[2].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Update start drawing position for text and shapes
     var drawHeight = drawHeight + (2 * downwardsTrianglePadding) + downwardsTriangles + fontSizeRandomQuote3;
 
     // Draw fourth line
-    ctx.font = fontSizeRandomQuote3 + "px 'Gudea'";
+    ctx.font = fontSizeRandomQuote3 + "px 'Frutiger 57Cn'";
     ctx.fillText(randomQuote[3].toUpperCase(), (canvasWidth / 2), drawHeight);
 
     // Set start drawing position for text and shapes

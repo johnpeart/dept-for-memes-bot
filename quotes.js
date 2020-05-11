@@ -77,15 +77,14 @@ var quotes = [
 
 	// RANDOM INSPIRATION
 	["Live every moment", "Love", "Beyond words", "Laugh everyday"],
-	["Go big", "Be", "Kind", "Go West"],
 	["Love challenges", "Be intrigued", "By mistakes", "Keep on learning"],
 	["Encourage yourself", "Believe", "In yourself", "Love yourself"],
 
 	// WHAT THREE THINGS?
-	["Be calm", "Keep", "calm", "And carry on"],
+	["Keep calm", "Keep very", "calm", "And carry on"],
 	["Stay somewhere", "Protect", "Something", "Save someone"],
 	["Stay something", "Control", "something", "Save someone"],
-	["Get cape", "Wear", "cape", "Fly. Maybe."],
+	["Get a cape", "Wear the", "cape", "Fly. Maybe."],
 
 	// The apathy staircase
 	["Experience", "Injustice", "Injection", "Visioning and action"]
