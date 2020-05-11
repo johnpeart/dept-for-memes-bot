@@ -31,10 +31,10 @@ module.exports = {
         // CANVAS VARIABLES
         // Pick a quote and colours at random
         var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
-        console.log("First: “" + randomQuote[0] + "” Second “" + randomQuote[1] + " " + randomQuote[2]+"” Third: “" + randomQuote[3] + "”");
+        console.log("Quote: “" + randomQuote[0] + " " + randomQuote[1] + " " + randomQuote[2]"”");
 
         var randomColors = colors[Math.floor(Math.random()*colors.length)];
-        console.log("Background: " + randomColors[0] + " Foreground: " + randomColors[1] +" Text: " + randomColors[2]);
+        console.log("Colours: " + randomColors[0] + ", " + randomColors[1] +", " + randomColors[2]);
 
         // Background colour
         ctx.fillStyle = randomColors[0];
