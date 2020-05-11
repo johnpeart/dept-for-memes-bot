@@ -31,7 +31,7 @@ module.exports = {
         // CANVAS VARIABLES
         // Pick a quote and colours at random
         var randomQuote = quotes[Math.floor(Math.random()*quotes.length)];
-        console.log("Quote: “" + randomQuote[0] + " " + randomQuote[1] + " " + randomQuote[2]"”");
+        console.log("Quote: “" + randomQuote[0] + " " + randomQuote[1] + " " + randomQuote[2] + "”");
 
         var randomColors = colors[Math.floor(Math.random()*colors.length)];
         console.log("Colours: " + randomColors[0] + ", " + randomColors[1] +", " + randomColors[2]);
@@ -103,6 +103,7 @@ module.exports = {
         // Set start drawing position for text and shapes
         var drawHeight = (canvasHeight / 2) - (textBlockHeight / 2) + (fontSizeRandomQuoteSansSerif / 4);
 
+        ctx.fillStyle = randomColors[1]
         // Draw first line
         ctx.font = fontSizeRandomQuoteSansSerif + "px '" + fontNameSansSerif + "'";
         ctx.fillText(randomQuote[0].toUpperCase(), (canvasWidth / 2), drawHeight);
