@@ -5,6 +5,7 @@ var quotes = [
 
 	// Dua Lipa
 	["Don’t show up", "Don’t", " come out", "Don’t start caring about me now"],
+	["Don't pick up the phone", "Don't let", "him in", "Don't be his friend"],
 
 	// Exercise songs
 	["So come on", "come on," , "come on", "Let’s get physical"],
@@ -84,7 +85,11 @@ var quotes = [
 	["Be calm", "Keep", "calm", "And carry on"],
 	["Stay somewhere", "Protect", "Something", "Save someone"],
 	["Stay something", "Control", "something", "Save someone"],
+	["Get cape", "Wear", "cape", "Fly. Maybe."],
+
+	// The apathy staircase
 	["Experience", "Injustice", "Injection", "Visioning and action"]
+	
 
 ];
   
