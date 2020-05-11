@@ -84,8 +84,7 @@ var quotes = [
 	["Be calm", "Keep", "calm", "And carry on"],
 	["Stay somewhere", "Protect", "Something", "Save someone"],
 	["Stay something", "Control", "something", "Save someone"],
-	["Experience", "Injustice", "Injection", "Visioning and action"],
-	[""]
+	["Experience", "Injustice", "Injection", "Visioning and action"]
 
 ];
   
