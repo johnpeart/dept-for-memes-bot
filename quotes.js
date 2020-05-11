@@ -11,13 +11,21 @@ var quotes = [
 	["Let’s get physical", "Physical", "I wanna get physical", "Let’s get into physical"],
 
 	// Kylie songs
-	["baby, when I heard you", "For the", "first time", "I knew we were meant to be as one"],
 	["So come on, come on", "Do the", "Loco-motion", "With me"],
 	
+	// ABBA
+	["You can dance", "You can", "jive", "Having the time of your life"],
+	["See that girl", "Watch that", "Scene", "Digging the Dancing Queen"],
+	["Money, Money, Money", "Must be", "Funny", "In a rich man’s world"],
+
 	// The Hokey Cokey
 	["Woah, the hokey cokey", "Woah", "the hokey cokey", "Woah, the hokey cokey"],
 	["Knees bent", "Arms", "Stretched", "Ra, Ra, Ra"],
 	["You put your left arm in", "You put your", "left arm out", "In, out, in, out"],
+	["You put your right arm in", "You put your", "right arm out", "In, out, in, out"],
+	["You put your left leg in", "You put your", "left leg out", "In, out, in, out"],
+	["You put your right leg in", "You put your", "right leg out", "In, out, in, out"],
+	["You put your whole self in", "You put your", "whole self out", "In, out, in, out"],
 	
 	// Songs about life
 	["Whether you’re a brother", "Or whether", " you’re a mother", "You’re stayin’ alive"],
@@ -41,8 +49,44 @@ var quotes = [
 	["Foot kickin’", "Finger", "clickin’", "Leather slappin’"],
 	["Hip bumpin’", "Music", "thumpin’", "Knee hitchin’"],
 
+	// Ain't No Mountain
+	["Ain’t no mountain high", "Ain’t no", "valley low", "Ain’t no river wide enough, baby"],
+	["Ain’t no mountain high enough", "Ain’t no valley", "low enough", "Ain’t no river wide enough"],
+
+	// La Macarena
+	["Dale a tu cuerpo alegría Macarena", "Que tu cuerpo es pa' darle alegria y cosa buena", "Dale a tu cuerpo alegria Macarena", "Hey Macarena"],
+
+	// The Matrix
+	["Don’t try to bend the spoon", "Realise", "The truth", "There is no spoon"],
+
+	// The only thing to fear...
+	["The only thing to fear", "Is fear", "Itself", "And spiders. They're terrifying."],
+	["The only thing to fear", "Is fear", "Itself", "And other people. They're weird."],
+	["The only thing to fear", "Is fear", "Itself", "And your nan. She's clingy."],
+	["The only thing to fear", "Is fear", "Itself", "And babies. They puke."],
+	["The only thing to fear", "Is fear", "Itself", "And death. That too."],
+	["The only thing to fear", "Is fear", "Itself", "And lizards. Fear them too."],
+	["The only thing to fear", "Is fear", "Itself", "And ’roaches. Fear them too."],
+	["The only thing to fear", "Is fear", "Itself", "And drag queens"],
+	["The only thing to fear", "Is fear", "Itself", "And lizards"],
+	["The only thing to fear", "Is fear", "Itself", "And your dad"],
+	["The only thing to fear", "Is fear", "Itself", "And your mum"],
+	["The only thing to fear", "Is fear", "Itself", "And bees. BZZZZ."],
+	["The only thing to fear", "Is fear", "Itself", "And wasps. BZZZZ."],
+
 	// RANDOM INSPIRATION
 	["Live every moment", "Love", "Beyond words", "Laugh everyday"],
+	["Go big", "Be", "Kind", "Go West"],
+	["Love challenges", "Be intrigued", "By mistakes", "Keep on learning"],
+	["Encourage yourself", "Believe", "In yourself", "Love yourself"],
+
+	// WHAT THREE THINGS?
+	["Be calm", "Keep", "calm", "And carry on"],
+	["Stay somewhere", "Protect", "Something", "Save someone"],
+	["Stay something", "Control", "something", "Save someone"],
+	["Experience", "Injustice", "Injection", "Visioning and action"],
+	[""]
+
 ];
   
 module.exports = quotes;
