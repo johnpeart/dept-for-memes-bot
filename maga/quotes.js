@@ -31,7 +31,7 @@ var quotes = [
 	["Make", "Dancing", "great again!"],
 	["Make", "Money", "great again!"],
 	["Make", "The Economy", "great again!"],
-	["Make", "Your Love Live", "great again!"],
+	["Make", "Your Love Life", "great again!"],
 	["Make", "Government", "great again!"],
 	["Make", "Governance", "great again!"],
 	["Make", "Admnistration", "great again!"],
