@@ -11,7 +11,7 @@ const 	{
 } = require('canvas');
 
 // Import global modules
-config = require(path.join(__dirname, './config-local.js'));
+config = require(path.join(__dirname, './config.js'));
 style = require(path.join(__dirname, './styles.js'));
 
 // Choose style (requires 'style' above)
