@@ -6,8 +6,8 @@
     "url": "https://github.com/johnpeart/dept-for-memes-bot.git"
   },
   "engines": {
-    "node": "6.9.1",
-    "npm": "6.14.4"
+    "node": "12.18.3",
+    "npm": "6.14.6"
   },
   "description": "A Twitter bot that tweets from the @DeptForMemes",
   "main": "main.js",

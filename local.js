@@ -28,6 +28,7 @@ function fontFile(name) {
 registerFont(fontFile('stay-alert.ttf'), { family: 'Frutiger 57Cn' });
 registerFont(fontFile('maga-sans.ttf'), { family: 'Montserrat' });
 registerFont(fontFile('maga-serif.ttf'), { family: 'Prata' });
+registerFont(fontFile('emoji.ttf'), { family: 'NotoEmoji-Regular' });
 
 // Set global sizes for the canvas
 var canvasWidth = 1200;
