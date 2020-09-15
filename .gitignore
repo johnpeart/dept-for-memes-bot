@@ -5,3 +5,4 @@ pkg-config*
 pkgconfig*
 npm-debug.log
 config-local.js
+output/output.png
