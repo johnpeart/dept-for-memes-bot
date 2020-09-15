@@ -71,11 +71,11 @@ module.exports = {
         ctx.fillStyle = randomColors[1];
 
         // Draw first symbol
-        ctx.fillText(randomQuote[3], (canvasWidth * 0.2), (canvasHeight * 0.55));
+        ctx.fillText(randomQuote[3], (canvasWidth * 0.2), (canvasHeight * 0.5));
         // Draw second symbol 
-        ctx.fillText(randomQuote[4], (canvasWidth * 0.5), (canvasHeight * 0.55));
+        ctx.fillText(randomQuote[4], (canvasWidth * 0.5), (canvasHeight * 0.5));
         // Drawn third symbol
-        ctx.fillText(randomQuote[5], (canvasWidth * 0.8), (canvasHeight * 0.55));
+        ctx.fillText(randomQuote[5], (canvasWidth * 0.8), (canvasHeight * 0.5));
 
         const buffer = deptcanvas.toBuffer('image/png');
         fs.writeFileSync('./output/output.png', buffer)
