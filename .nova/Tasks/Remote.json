@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "node start"
+    }
+  },
+  "identifier" : "47AAB404-5C53-4F73-8971-317F0B702224"
+}

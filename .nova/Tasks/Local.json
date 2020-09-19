@@ -1,0 +1,9 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "node local"
+    }
+  },
+  "identifier" : "66C742D9-8B24-4BDF-8692-6EBC4E5D9BA8"
+}
