@@ -49,7 +49,7 @@ module.exports = {
         var fontSizeRandomQuote = 50;
         var fontSizeRandomIcon = 100;
         var fontName = "Frutiger 57Cn"
-        var fontIconsName = "NotoEmoji-Regular"
+        var fontIconsName = "Emoji"
 
         ctx.font = fontSizeRandomQuote + "px '" + fontName + "'";
 
